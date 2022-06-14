@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  min-width: fit-content;
+  position: relative;
+}
+
+body {
+  display: flex;
+  min-width: fit-content;
+  height: 100vh;
+  background-color: hsl(240, 78%, 98%);
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+}
+
+.background-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.background-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.page-title {
+  color: hsl(233, 13%, 49%);
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.pricing-table {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: hsl(234, 14%, 74%);
+  margin-bottom: 3.6rem;
+  font-size: 1.5rem;
+}
+
+.switch-btn {
+  width: 23px;
+  height: 23px;
+  margin-left: 3px;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s;
+}
+
+.switch-btn:hover {
+  cursor: pointer;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  background-color: hsl(233, 13%, 49%);
+  border-radius: 50px;
+}
+
+.switch-on {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.on {
+  transform: translateX(100%);
+}
+
+.center-table,
+.side-tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  box-shadow: 0 5px 15px #ccc;
+  padding: 50px 25px 25px 25px;
+}
+
+.center-table {
+  color: hsl(240, 78%, 98%);
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 1rem;
+  height: 450px;
+}
+
+.side-tables {
+  color: hsl(232, 13%, 33%);
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.card-name {
+  font-size: 1.5rem;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  font-size: 6.5rem;
+  gap: 1rem;
+}
+
+.basic-price,
+.professional-price,
+.master-price {
+  font-size: 6.5rem;
+}
+
+span {
+  font-size: 4rem;
+}
+
+.center-li {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.5rem;
+}
+
+.center-table > * {
+  margin-bottom: 1.5rem;
+}
+
+.center-table > p {
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+}
+
+.side-tables > * {
+  margin-bottom: 1.5rem;
+}
+
+.side-tables > p {
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+}
+
+.top {
+  padding-top: 1.5rem;
+  border-top: 0.1px solid hsl(240, 78%, 98%);
+}
+
+.btn {
+  color: hsl(237, 63%, 64%);
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.side-tables .btn {
+  color: #fff;
+  background-color: hsl(237, 63%, 64%);
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
